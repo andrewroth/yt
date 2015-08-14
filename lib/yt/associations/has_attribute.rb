@@ -44,9 +44,7 @@ module Yt
 
           define_method name do
             value = instance_variable_get ivar_name
-            # don't ever rely on cache; it consistently causes wrong results 
-            # (though I can't consistently reproduce the problem.. yet)
-            instance_variable_set ivar_name, instance_eval(&method)
+            instance_variable_set ivar_name, value || instance_eval(&method)
           end
         end
       end
