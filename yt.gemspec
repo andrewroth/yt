@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'yt/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "yt"
+  spec.name          = "yt-andrewroth"
   spec.version       = Yt::VERSION
   spec.authors       = ["Claudio Baccigalupo"]
   spec.email         = ["claudio@fullscreen.net"]
