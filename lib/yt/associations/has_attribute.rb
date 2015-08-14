@@ -47,6 +47,16 @@ module Yt
             instance_variable_set ivar_name, value || instance_eval(&method)
           end
         end
+
+        # This version never uses the cache, but does set the instance variable.
+        # Just testing to see if I can get something reliable.
+        def define_memoized_method2(name, &method)
+          ivar_name = "@#{name.to_s.gsub /[?!]$/, ''}"
+
+          define_method name do
+            instance_variable_set ivar_name, instance_eval(&method)
+          end
+        end
       end
     end
   end

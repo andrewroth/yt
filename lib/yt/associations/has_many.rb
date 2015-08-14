@@ -15,7 +15,7 @@ module Yt
         require "yt/collections/#{attributes}"
         collection_name = attributes.to_s.sub(/.*\./, '').camelize.pluralize
         collection = "Yt::Collections::#{collection_name}".constantize
-        define_memoized_method(attributes) { collection.of self }
+        define_memoized_method2(attributes) { collection.of self }
       end
     end
   end
