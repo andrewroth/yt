@@ -6,6 +6,26 @@ For more information about changelogs, check
 [Keep a Changelog](http://keepachangelog.com) and
 [Vandamme](http://tech-angels.github.io/vandamme).
 
+## 0.25.10 - 2015-10-29
+
+* [FEATURE] Add Playlist#item_count
+
+## 0.25.9 - 2015-10-07
+
+* [ENHANCEMENT] Add newly available traffic source: "Playlist page"
+
+## 0.25.8 - 2015-09-10
+
+* [FEATURE] Retry the same request up to 3 times if YouTube responds with "quotaExceeded"
+
+## 0.25.7 - 2015-09-10
+
+* [FEATURE] Retry the same request once if YouTube responds with "quotaExceeded"
+
+## 0.25.6 - 2015-09-03
+
+* [FEATURE] New channel/video reports: `videos_added_to_playlists`, `videos_removed_from_playlists`.
+
 ## 0.25.5 - 2015-08-12
 
 * [BUGIX] Correctly parse the YouTube response when requesting a refresh token with the wrong credentials.
