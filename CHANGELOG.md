@@ -6,6 +6,15 @@ For more information about changelogs, check
 [Keep a Changelog](http://keepachangelog.com) and
 [Vandamme](http://tech-angels.github.io/vandamme).
 
+-## 0.25.11.2 - 2015-11-05
+
+* Never cache attributes
+
+-## 0.25.11 - 2015-11-05
+
+* [ENHANCEMENT] Add "youtube.com/v/..." as possible URL for YouTube videos
+* [ENHANCEMENT] Add eager loading to channel.playlists
+
 ## 0.25.10 - 2015-10-29
 
 * [FEATURE] Add Playlist#item_count
